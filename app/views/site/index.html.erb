@@ -1,2 +1,14 @@
-<h1>Site#index</h1>
-<p>Find me in app/views/site/index.html.erb</p>
+<h1 class="font-bold"> Apple Counter</h1>
+<div>
+  <div id="count">
+    <%= @count %> Apples
+  </div>
+  <div class="flex gap-5 mt-5">
+    <%= button_to "Add", add_path, class: "pg-2 bg-blue-500 text-white rounded-lg" %>
+    <%= button_to "Remove", remove_path, class: "pg-2 bg-blue-500 text-white rounded-lg" %>
+  </div>
+  <div id="log" class="mt-5">
+    This is the log
+  </div>
+</div>
+
